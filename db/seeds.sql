@@ -16,3 +16,15 @@ VALUES
     ('Production Coordinator', 60000, 3),
     ('Production Accountant', 250000, 4),
     ('First Ass Accountant', 125000, 4);
+
+    INSERT INTO employee
+    (first_name, last_name, role_id, manager_id)
+VALUES
+    ('Nicholas', 'Ortiz', 1, NULL),
+    ('Tanner', 'Powell', 2, 1),
+    ('Molly', 'Scott', 3, NULL),
+    ('Michael', 'Scott', 4, 3),
+    ('Felicity', 'Smaok', 5, NULL),
+    ('Klause', 'Diemler', 6, 5),
+    ('Peggy', 'Attridge', 7, NULL),
+    ('Mariano', 'DiVincenzo', 8, 7);
