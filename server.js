@@ -290,6 +290,10 @@ addEmployee=()=>{
                 db.promise().query(managerSql)
                 .then(([rows,fields])=>{
                     const managers = rows.map(({ id, first_name, last_name }) => ({ name: first_name + " "+ last_name, value: id }));
+                    managers.push({
+                      name:'no manager',
+                      value: null,
+                    })
                     inquirer.prompt([
                         {
                             type: 'list',
